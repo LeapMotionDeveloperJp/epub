@@ -15,4 +15,4 @@ LeapMotionは、LeapMotion社から販売された手のジェスチャーによ
 #### Windows
 #### Macintosh
 #### Linux
-### 最新動向（活用事例）
+
