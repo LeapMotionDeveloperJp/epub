@@ -13,9 +13,14 @@ LeapMotionは、LeapMotion社から販売された手のジェスチャーによ
 * CMOSイメージセンサー　半径50センチ、中心角110度の空間で、手、指、ペンのポイントを0.01ミリの精度で認識
 
 ### ソフトウェア
-* コントロールパネル 設定やソフトウェアアップデートなど
-Leap Motion Visualizer Leap Motion のセンシングデータをキレイに可視化
-Airspace Leap Motion アプリケーションのストア Leap Motion Diagnostics Visualizer Leap Motion のセンシングデータを可視化
+* コントロールパネル
+* * 設定やソフトウェアアップデートなど
+* Leap Motion Visualizer
+* * Leap Motion のセンシングデータをキレイに可視化
+* Airspace
+* * Leap Motion アプリケーションのストア 
+* Leap Motion Diagnostics Visualizer
+* * Leap Motion のセンシングデータを可視化
 
 ### 開発言語について
 #### APIの種類
