@@ -9,8 +9,28 @@ LeapMotionは、LeapMotion社から販売された手のジェスチャーによ
 #### 関連 HMD
 ### 仕様
 #### スペックほか
+### 開発言語について
+#### APIの種類
+ネイティブ・アブリケーション・インターフェース:
+
+Leapのサービスからネイティブのライブラリを利用して直接データを受け取る方法。 ネイティブのライブラリはC++、Objective-Cで作られていて、そこからラッバーライブラリを使っ てC#、Java、Pythonを使って開発を行う。
+
+Web Socketインターフェイス:
+
+LeapサービスはWebSocketサーバーの機能を持っており、アブリケーションから接続し、JSON 形式でデータを受け取る方法。
+
+http://127.0.0.1:6437でサーバーを提供します。
+* JavaScript
+* Unity/C#
+* UnrealEngine/C++, BluePrint
+* C++
+* Java
+* Python
+* Objective-C
+
 ### 開発環境の準備
-#### 言語
+
+￼
 #### SDKのインストール
 #### Windows
 #### Macintosh
