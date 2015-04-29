@@ -3,7 +3,7 @@
 ## App Store - Air Space -
 ## ビジュアライザー
 ## Leap Motion Orientation
-### 最新動向（活用事例）
+### 最新動向
 * HDM
 
 #### LeapMotionが組み込まれているデバイス
