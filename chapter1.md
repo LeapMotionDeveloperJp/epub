@@ -8,7 +8,7 @@ LeapMotionは、LeapMotion社から販売された手のジェスチャーによ
 
 [BBソフトサービス株式会社](http://www.bbss.co.jp/product/leapmotion/index.html)
 ### 価格
-定価　￥ 10,080
+定価　$ 99
 ## 仕様
 ### スペック
 * サイズ W80×D30×H11mm
