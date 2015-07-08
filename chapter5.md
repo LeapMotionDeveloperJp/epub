@@ -1,52 +1,74 @@
 # サンプルアプリをつくる
 ## DOM操作
+### index.htmlを用意
+表示するためのHTMLファイルを作成し、LeapMotionのJavaScriptライブラリを読み込みます。
 ```
-<html> <head> </head>
-<body>
-<h1>Hello, LeapJS (V2)!</h1>
-<div id="output"></div>
-<script src="//js.leapmotion.com/leap-0.6.3.min.js"></script>
-</body>
+<html>
+    <head></head>
+    <body>
+        <h1>Hello, LeapJS (V2)!</h1>
+        <div id="output"></div>
+        <script src="//js.leapmotion.com/leap-0.6.3.min.js"></script>
+    </body>
 </html>
 ```
-
+### インラインにJavaScriptを用意
+index.htmlの```</body>```にスクリプトを書いてきます。
 ```
 <script src="//js.leapmotion.com/leap-0.6.3.min.js"></script>
 <script type="text/javascript">
-function concatData(id, data) { return id + ": " + data + "<br>";
+function concatData(id, data) {
+    return id + ": " + data + "<br>";
 }
 // DOM
-var output = document.getElementById(‘output');
+var output = document.getElementById("output");
 // Frame, Hand, Finger Variable
-var frameString = "", handString = "", fingerString = ""; var hand, finger;
-// Main Leap Loop Leap.loop(options, function(frame) {
-frameString = concatData("frame_id", frame.id);
-frameString += concatData("num_hands", frame.hands.length); frameString += concatData("num_fingers",
-frame.fingers.length); frameString += “<br>”;
-// Output HTML output.innerHTML = frameString;
-}); </script>```
+var frameString = "", handString = "", fingerString = "";
+var hand, finger;
 
-￼
+// Main Leap Loop
+Leap.loop(options, function (frame) {
+    frameString = concatData("frame_id", frame.id);
+    frameString += concatData("num_hands", frame.hands.length);
+    frameString += concatData("num_fingers", frame.fingers.length);
+    frameString += "<br>";
+
+// Output HTML
+    output.innerHTML = frameString;
+});
+</script>
 ```
-function concatData(id, data) { return id + ": " + data + "<br>";
+### インラインにJavaScriptを用意
+index.htmlの```</body>```にスクリプトを書いてきます。
+```
+function concatData(id, data) {
+    return id + ": " + data + "<br>";
 }
 // FingerName
 function getFingerName(fingerType) {
-switch(fingerType) { case 0:
-return 'Thumb'; break;
-case 1:
-return 'Index'; break;
-case 2:
-return 'Middle'; break;
-case 3:
-return 'Ring'; break;
-case 4:
-return 'Pinky'; break;
-} }
+    switch (fingerType) {
+        case 0:
+            return 'Thumb';
+            break;
+        case 1:
+            return 'Index';
+            break;
+        case 2:
+            return 'Middle';
+            break;
+        case 3:
+            return 'Ring';
+            break;
+        case 4:
+            return 'Pinky';
+            break;
+    }
+}
 // Concat Joint Position
 function concatJointPosition(id, position) {
-return id + ": " + position[0] + ", " + position[1] + ", " + position[2] + "<br>";
-}```
+    return id + ": " + position[0] + ", " + position[1] + ", " + position[2] + "<br>";
+}
+```
 
 
 ￼
